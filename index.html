@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Роберт Садретдинов — Senior Java Backend Developer</title>
+  <meta name="description" content="Senior Java Backend Developer (Java/Spring/Kafka/Kubernetes). FinTech и Enterprise. Высоконагруженные сервисы, интеграции, устойчивость, CI/CD, тестирование." />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Роберт Садретдинов — Senior Java Backend Developer" />
+  <meta property="og:description" content="Java/Spring/Kafka/Kubernetes. FinTech и Enterprise. Высоконагруженные сервисы, интеграции, устойчивость, CI/CD, тестирование." />
+  <meta property="og:type" content="website" />
+  <!-- Подставьте свою картинку позже -->
+  <!-- <meta property="og:image" content="https://<your-domain>/og.png" /> -->
+
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <header class="container header">
+    <div class="brand">
+      <div class="name">Роберт Садретдинов</div>
+      <div class="role">Senior Java Backend Developer</div>
+      <div class="meta">Казань · Remote/Hybrid · Готов к переезду и командировкам</div>
+    </div>
+
+    <nav class="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#experience">Опыт</a>
+      <a href="#projects">Проекты</a>
+      <a href="#skills">Навыки</a>
+      <a href="#practice">Подход</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Разрабатываю надёжные backend-сервисы и интеграции для FinTech и Enterprise</h1>
+        <p class="lead">
+          Фокус: производительность, устойчивость, тестируемость и эксплуатация.
+          Опыт с высокими нагрузками, микросервисами и интеграционными контурами.
+        </p>
+
+        <div class="tags">
+          <span>Java 17/11</span>
+          <span>Spring Boot</span>
+          <span>Kafka</span>
+          <span>Kubernetes</span>
+          <span>Oracle/PostgreSQL</span>
+          <span>DDD/Hexagonal</span>
+          <span>CI/CD</span>
+          <span>Observability</span>
+        </div>
+
+        <div class="cta">
+          <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">Скачать резюме (PDF)</a>
+          <!-- Поставьте ссылки, когда будете готовы -->
+          <a class="btn" href="#" aria-disabled="true" title="Добавьте ссылку на GitHub">GitHub</a>
+          <a class="btn" href="#" aria-disabled="true" title="Добавьте ссылку на LinkedIn/HH/другой профиль">Профиль</a>
+        </div>
+      </div>
+
+      <aside class="hero-right card">
+        <div class="card-title">Коротко</div>
+        <ul class="bullets">
+          <li>5+ лет коммерческого опыта в FinTech и Enterprise</li>
+          <li>Микросервисы, интеграции, высоконагруженные контуры</li>
+          <li>Resilience: retries/circuit breakers, deadlock fixes, потоковая оптимизация</li>
+          <li>CI/CD: ускорение pipeline, security checks (OWASP dep-check)</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>Обо мне</h2>
+      <div class="grid-2">
+        <div class="card">
+          <p>
+            Ответственный и инициативный Java Developer с опытом разработки корпоративных продуктов и FinTech-систем.
+            Предпочитаю удалённый формат, открыт к изучению новых технологий (например, Go/Scala).
+          </p>
+          <p class="small muted">
+            Языки: Русский (родной), Английский (B2).
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">Что обычно делаю лучше всего</div>
+          <ul class="bullets">
+            <li>Проектирую и развиваю REST API, сопровождаю OpenAPI/контракты</li>
+            <li>Оптимизирую производительность и стабильность (p95/throughput/lock contention)</li>
+            <li>Интегрирую сервисы через Kafka/HTTP/JMS, обеспечиваю согласованность</li>
+            <li>Выстраиваю практики качества: тесты, CI/CD, код-ревью, релиз-ноты</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2>Опыт</h2>
+
+      <article class="card item">
+        <div class="item-head">
+          <div>
+            <div class="item-title">SM Lab — Senior Java Developer</div>
+            <div class="muted">Ноябрь 2023 — Декабрь 2025 · Казань</div>
+          </div>
+          <div class="pill">Enterprise Retail</div>
+        </div>
+        <p class="muted">
+          Intraday (автоматизация процессов магазинов) + DIS (маршрутизатор/кэш между мобильными устройствами и бэкофисом).
+          Покрытие: 600+ магазинов.
+        </p>
+        <ul class="bullets">
+          <li>Ускорил GitLab pipeline в 2 раза за счёт оптимизации интеграционных тестов</li>
+          <li>Настроил GitLab CI для микросервиса, внедрил OWASP dep-check (NVD API)</li>
+          <li>Поддерживал и развивал микросервис с нагрузкой до 500 RPS (peak write load)</li>
+          <li>Повысил пропускную способность, внедрив реактивный подход (Project Reactor)</li>
+          <li>Увеличил uptime: устранил deadlock-и, оптимизировал работу потоков</li>
+          <li>Настроил retries (Resilience4j) между микросервисами для устойчивости и согласованности данных</li>
+          <li>Интеграции: REST API, Kafka, Oracle DBLink; оптимизация SQL в инвентаризации и приёмке</li>
+          <li>ScrumBan, активное код-ревью; релиз-ноты; менторинг; распределение задач как техлид на одном из MS</li>
+        </ul>
+        <div class="stack">
+          <span>Java 17</span><span>Spring Boot 2</span><span>Gradle</span><span>Oracle</span><span>Kafka</span>
+          <span>Kubernetes</span><span>Helm</span><span>DDD</span><span>Hexagonal</span><span>RocksDB</span><span>HSQLDB</span>
+        </div>
+      </article>
+
+      <article class="card item">
+        <div class="item-head">
+          <div>
+            <div class="item-title">Bybit Fintech — Java Developer</div>
+            <div class="muted">Август 2025 — Октябрь 2025 · Сингапур</div>
+          </div>
+          <div class="pill">Trading</div>
+        </div>
+        <ul class="bullets">
+          <li>Разработка торгового бота с возможностью запускать множество стратегий</li>
+          <li>Сбор требований, прототипирование, бэктестинг</li>
+        </ul>
+        <div class="stack">
+          <span>Spring Boot</span><span>WebSocket</span><span>Bybit API</span><span>React</span>
+        </div>
+      </article>
+
+      <article class="card item">
+        <div class="item-head">
+          <div>
+            <div class="item-title">SM Lab — Java Developer</div>
+            <div class="muted">Август 2025 — Сентябрь 2025 · Казань</div>
+          </div>
+          <div class="pill">LLM Automation</div>
+        </div>
+        <ul class="bullets">
+          <li>Реализовал Code Review Agent (MVP) на LangFlow для GitLab CI</li>
+        </ul>
+        <div class="stack">
+          <span>LangFlow</span><span>Python 3</span><span>GitLab API</span><span>Llama</span>
+        </div>
+      </article>
+
+      <article class="card item">
+        <div class="item-head">
+          <div>
+            <div class="item-title">Bell Integrator — Senior Java Developer</div>
+            <div class="muted">Август 2020 — Май 2023 · Москва</div>
+          </div>
+          <div class="pill">FinTech</div>
+        </div>
+        <ul class="bullets">
+          <li>Разработка функционала маржинальной торговли; REST API и OpenAPI-документация</li>
+          <li>Интеграции с внешними/внутренними системами: IBM MQ, Hazelcast, HTTP/2</li>
+          <li>Поддержание покрытия тестами ~70%, участие в ревью и автоматизации тестирования</li>
+          <li>Участие в релизах на прод и оперативном устранении инцидентов</li>
+          <li>Реализовал расчёт стоимости премиальных опционов MOEX по модели Блэка–Шоулза</li>
+          <li>Оптимизация построения клиентского дерева: сокращение времени деплоя торгового контура</li>
+          <li>LDAP-аутентификация, участие в SRE-процессах, метрики/мониторинг</li>
+        </ul>
+        <div class="stack">
+          <span>Java 11</span><span>Spring</span><span>Kafka</span><span>Kubernetes</span><span>Maven</span><span>Event Sourcing</span>
+          <span>IBM MQ</span><span>Hazelcast</span>
+        </div>
+      </article>
+
+      <article class="card item">
+        <div class="item-head">
+          <div>
+            <div class="item-title">ЦРПТ (“Честный Знак”) — Java Developer</div>
+            <div class="muted">Сентябрь 2019 — Август 2020</div>
+          </div>
+          <div class="pill">Public API</div>
+        </div>
+        <ul class="bullets">
+          <li>Разработка высоконагруженного публичного API Gateway: маршрутизация, унификация API, retry/circuit breaker</li>
+          <li>Spring Security + JWT, асинхронные HTTP-вызовы, сопровождение OpenAPI</li>
+          <li>Метрики и дашборды для Prometheus/Grafana; высокая доступность под нагрузкой</li>
+          <li>10+ стабильных релизов, активно используемых по всей стране</li>
+        </ul>
+        <div class="stack">
+          <span>Java 11</span><span>Spring Boot</span><span>OpenFeign</span><span>Gradle</span><span>Kubernetes</span><span>Prometheus</span><span>Grafana</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Проекты</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Intraday + DIS (SM Lab)</div>
+          <p class="muted">Автоматизация процессов магазинов + маршрутизация/кэш данных между мобильными устройствами и бэкофисом.</p>
+          <ul class="bullets">
+            <li>Производительность: реактивный подход, оптимизация SQL</li>
+            <li>Надёжность: устранение deadlock-ов, Resilience4j (retries)</li>
+            <li>CI/CD: ускорение pipeline, security checks</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Public API Gateway (“Честный Знак”)</div>
+          <p class="muted">Единая точка входа для внешних клиентов: маршрутизация, унификация API, безопасность, наблюдаемость.</p>
+          <ul class="bullets">
+            <li>Spring Security + JWT</li>
+            <li>retry/circuit breaker</li>
+            <li>Prometheus/Grafana, OpenAPI</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Trading Bot (Bybit Fintech)</div>
+          <p class="muted">Бот с возможностью параллельного запуска стратегий и бэктестинга.</p>
+          <ul class="bullets">
+            <li>WebSocket, интеграция с биржевым API</li>
+            <li>Сбор требований, прототипирование</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Code Review Agent (MVP)</div>
+          <p class="muted">Автоматизация code review в GitLab CI с использованием LLM-подхода.</p>
+          <ul class="bullets">
+            <li>LangFlow, GitLab API</li>
+            <li>Интеграция в CI pipeline</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="small muted">
+        Примечание: если вы дадите ссылки на GitHub/демо/репозитории, я добавлю их в карточки.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Навыки</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-title">Backend</div>
+          <div class="chips">
+            <span>Java</span><span>Spring</span><span>Spring Boot</span><span>Spring Security</span>
+            <span>REST API</span><span>OpenAPI</span><span>JPA/Hibernate</span><span>Liquibase</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Data & Messaging</div>
+          <div class="chips">
+            <span>Oracle</span><span>PostgreSQL</span><span>SQL</span><span>Kafka</span><span>JMS</span><span>IBM MQ</span><span>Hazelcast</span>
+            <span>RocksDB</span><span>HSQLDB</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Infrastructure & Quality</div>
+          <div class="chips">
+            <span>Docker</span><span>Kubernetes</span><span>Helm</span><span>CI/CD</span><span>GitLab CI</span>
+            <span>Unit/Integration Testing</span><span>Performance Optimization</span><span>Concurrency</span><span>Grafana</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRACTICE -->
+    <section id="practice" class="sec

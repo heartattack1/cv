@@ -4,284 +4,622 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Роберт Садретдинов — Senior Java Backend Developer</title>
-  <meta name="description" content="Senior Java Backend Developer (Java/Spring/Kafka/Kubernetes). FinTech и Enterprise. Высоконагруженные сервисы, интеграции, устойчивость, CI/CD, тестирование." />
+
+  <meta name="description" content="Senior Java Backend Developer. Java, Spring Boot, Kafka, Kubernetes. FinTech и Enterprise. Высоконагруженные сервисы, интеграции, устойчивость, CI/CD." />
 
   <!-- OpenGraph -->
   <meta property="og:title" content="Роберт Садретдинов — Senior Java Backend Developer" />
-  <meta property="og:description" content="Java/Spring/Kafka/Kubernetes. FinTech и Enterprise. Высоконагруженные сервисы, интеграции, устойчивость, CI/CD, тестирование." />
+  <meta property="og:description" content="Java / Spring / Kafka / Kubernetes. FinTech and Enterprise backend." />
   <meta property="og:type" content="website" />
-  <!-- Подставьте свою картинку позже -->
-  <!-- <meta property="og:image" content="https://<your-domain>/og.png" /> -->
 
   <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- Minimal styles for language toggle (so you don't need to edit style.css) -->
+  <style>
+    .lang-toggle { display:flex; align-items:center; gap:10px; justify-content:flex-end; }
+    .lang-toggle .seg {
+      display:inline-flex; border:1px solid var(--border); border-radius:999px;
+      overflow:hidden; background: rgba(255,255,255,.02);
+    }
+    .lang-toggle button {
+      appearance:none; border:0; background:transparent; color:var(--muted);
+      padding:8px 12px; cursor:pointer; font-size:12px;
+    }
+    .lang-toggle button[aria-pressed="true"]{
+      color:var(--text);
+      background: rgba(122,162,255,.14);
+    }
+    .lang-toggle .label { font-size:12px; color:var(--muted); }
+  </style>
 </head>
 
 <body>
-  <header class="container header">
-    <div class="brand">
-      <div class="name">Роберт Садретдинов</div>
-      <div class="role">Senior Java Backend Developer</div>
-      <div class="meta">Казань · Remote/Hybrid · Готов к переезду и командировкам</div>
+<header class="container header">
+  <div class="brand">
+    <div class="name">Роберт Садретдинов</div>
+    <div class="role">
+      <span data-lang="ru">Senior Java Backend Developer</span>
+      <span data-lang="en" hidden>Senior Java Backend Developer</span>
+    </div>
+    <div class="meta">
+      <span data-lang="ru">Казань · Remote / Hybrid · Готов к переезду</span>
+      <span data-lang="en" hidden>Kazan · Remote / Hybrid · Open to relocation</span>
+    </div>
+  </div>
+
+  <div style="display:flex; flex-direction:column; gap:10px; align-items:flex-end;">
+    <div class="lang-toggle" aria-label="Language toggle">
+      <span class="label" data-lang="ru">Язык</span>
+      <span class="label" data-lang="en" hidden>Language</span>
+
+      <div class="seg" role="group" aria-label="Select language">
+        <button id="btn-ru" type="button" aria-pressed="true">RU</button>
+        <button id="btn-en" type="button" aria-pressed="false">EN</button>
+      </div>
     </div>
 
     <nav class="nav">
-      <a href="#about">Обо мне</a>
-      <a href="#experience">Опыт</a>
-      <a href="#projects">Проекты</a>
-      <a href="#skills">Навыки</a>
-      <a href="#practice">Подход</a>
-      <a href="#contacts">Контакты</a>
+      <a href="#about">
+        <span data-lang="ru">Обо мне</span>
+        <span data-lang="en" hidden>About</span>
+      </a>
+      <a href="#experience">
+        <span data-lang="ru">Опыт</span>
+        <span data-lang="en" hidden>Experience</span>
+      </a>
+      <a href="#projects">
+        <span data-lang="ru">Проекты</span>
+        <span data-lang="en" hidden>Projects</span>
+      </a>
+      <a href="#skills">
+        <span data-lang="ru">Навыки</span>
+        <span data-lang="en" hidden>Skills</span>
+      </a>
+      <a href="#practice">
+        <span data-lang="ru">Подход</span>
+        <span data-lang="en" hidden>Approach</span>
+      </a>
+      <a href="#contacts">
+        <span data-lang="ru">Контакты</span>
+        <span data-lang="en" hidden>Contact</span>
+      </a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-left">
-        <h1>Разрабатываю надёжные backend-сервисы и интеграции для FinTech и Enterprise</h1>
-        <p class="lead">
-          Фокус: производительность, устойчивость, тестируемость и эксплуатация.
-          Опыт с высокими нагрузками, микросервисами и интеграционными контурами.
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>
+        <span data-lang="ru">Разрабатываю надёжные backend-сервисы для FinTech и Enterprise</span>
+        <span data-lang="en" hidden>I build reliable backend services for FinTech and Enterprise</span>
+      </h1>
+
+      <p class="lead">
+        <span data-lang="ru">
+          Фокус на производительности, устойчивости и качестве.
+          Опыт работы с высоконагруженными системами, микросервисами и интеграционными контурами.
+        </span>
+        <span data-lang="en" hidden>
+          Focused on performance, reliability, and engineering quality.
+          Experience with high-load systems, microservices, and complex integrations.
+        </span>
+      </p>
+
+      <div class="tags">
+        <span>Java 17 / 11</span>
+        <span>Spring Boot</span>
+        <span>Kafka</span>
+        <span>Kubernetes</span>
+        <span>Oracle / PostgreSQL</span>
+        <span>DDD</span>
+        <span>CI/CD</span>
+        <span>Observability</span>
+      </div>
+
+      <div class="cta">
+        <a class="btn primary"
+           href="https://www.linkedin.com/in/roberts31337"
+           target="_blank"
+           rel="noopener">
+          LinkedIn
+        </a>
+
+        <a class="btn"
+           href="#"
+           aria-disabled="true"
+           title="Добавьте ссылку на GitHub / Add your GitHub link">
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <aside class="hero-right card">
+      <div class="card-title">
+        <span data-lang="ru">Коротко</span>
+        <span data-lang="en" hidden>Highlights</span>
+      </div>
+
+      <ul class="bullets">
+        <li>
+          <span data-lang="ru">5+ лет коммерческого backend-опыта</span>
+          <span data-lang="en" hidden>5+ years of professional backend experience</span>
+        </li>
+        <li>
+          <span data-lang="ru">FinTech, retail, public API</span>
+          <span data-lang="en" hidden>FinTech, retail, public APIs</span>
+        </li>
+        <li>
+          <span data-lang="ru">Высокие нагрузки, concurrency, deadlock-fixes</span>
+          <span data-lang="en" hidden>High load, concurrency, deadlock fixes</span>
+        </li>
+        <li>
+          <span data-lang="ru">CI/CD, тестирование, эксплуатация</span>
+          <span data-lang="en" hidden>CI/CD, testing, production operations</span>
+        </li>
+      </ul>
+    </aside>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>
+      <span data-lang="ru">Обо мне</span>
+      <span data-lang="en" hidden>About</span>
+    </h2>
+
+    <div class="grid-2">
+      <div class="card">
+        <p>
+          <span data-lang="ru">
+            Senior Java-разработчик с опытом построения и поддержки
+            высоконагруженных корпоративных систем и FinTech-платформ.
+          </span>
+          <span data-lang="en" hidden>
+            Senior Java engineer with experience building and operating
+            high-load enterprise systems and FinTech platforms.
+          </span>
         </p>
 
-        <div class="tags">
-          <span>Java 17/11</span>
-          <span>Spring Boot</span>
-          <span>Kafka</span>
-          <span>Kubernetes</span>
-          <span>Oracle/PostgreSQL</span>
-          <span>DDD/Hexagonal</span>
-          <span>CI/CD</span>
-          <span>Observability</span>
-        </div>
+        <p>
+          <span data-lang="ru">
+            Интересуют задачи, где важны архитектура, устойчивость,
+            качество кода и реальная эксплуатация в продакшене.
+          </span>
+          <span data-lang="en" hidden>
+            I’m interested in work where architecture, reliability,
+            code quality, and production operations truly matter.
+          </span>
+        </p>
 
-        <div class="cta">
-          <a class="btn primary" href="https://www.linkedin.com/in/roberts31337" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="#" aria-disabled="true" title="Добавьте ссылку на GitHub">GitHub</a>
-        </div>
+        <p class="small muted">
+          <span data-lang="ru">Языки: русский — родной, английский — B2.</span>
+          <span data-lang="en" hidden>Languages: Russian (native), English (B2).</span>
+        </p>
       </div>
 
-      <aside class="hero-right card">
-        <div class="card-title">Коротко</div>
+      <div class="card">
+        <div class="card-title">
+          <span data-lang="ru">Сильные стороны</span>
+          <span data-lang="en" hidden>Strengths</span>
+        </div>
         <ul class="bullets">
-          <li>5+ лет коммерческого опыта в FinTech и Enterprise</li>
-          <li>Микросервисы, интеграции, высоконагруженные контуры</li>
-          <li>Resilience: retries/circuit breakers, deadlock fixes, потоковая оптимизация</li>
-          <li>CI/CD: ускорение pipeline, security checks (OWASP dep-check)</li>
+          <li>
+            <span data-lang="ru">Проектирование и развитие REST API</span>
+            <span data-lang="en" hidden>REST API design and evolution</span>
+          </li>
+          <li>
+            <span data-lang="ru">Интеграции (Kafka, HTTP, JMS)</span>
+            <span data-lang="en" hidden>Integrations (Kafka, HTTP, JMS)</span>
+          </li>
+          <li>
+            <span data-lang="ru">Производительность и конкурентность</span>
+            <span data-lang="en" hidden>Performance and concurrency</span>
+          </li>
+          <li>
+            <span data-lang="ru">CI/CD и инженерные практики</span>
+            <span data-lang="en" hidden>CI/CD and engineering practices</span>
+          </li>
         </ul>
-      </aside>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <h2>Обо мне</h2>
-      <div class="grid-2">
-        <div class="card">
-          <p>
-            Ответственный и инициативный Java Developer с опытом разработки корпоративных продуктов и FinTech-систем.
-            Предпочитаю удалённый формат, открыт к изучению новых технологий (например, Go/Scala).
-          </p>
-          <p class="small muted">
-            Языки: Русский (родной), Английский (B2).
-          </p>
-        </div>
-        <div class="card">
-          <div class="card-title">Что обычно делаю лучше всего</div>
-          <ul class="bullets">
-            <li>Проектирую и развиваю REST API, сопровождаю OpenAPI/контракты</li>
-            <li>Оптимизирую производительность и стабильность (p95/throughput/lock contention)</li>
-            <li>Интегрирую сервисы через Kafka/HTTP/JMS, обеспечиваю согласованность</li>
-            <li>Выстраиваю практики качества: тесты, CI/CD, код-ревью, релиз-ноты</li>
-          </ul>
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <h2>Опыт</h2>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2>
+      <span data-lang="ru">Опыт</span>
+      <span data-lang="en" hidden>Experience</span>
+    </h2>
 
-      <article class="card item">
-        <div class="item-head">
-          <div>
-            <div class="item-title">SM Lab — Senior Java Developer</div>
-            <div class="muted">Ноябрь 2023 — Декабрь 2025 · Казань</div>
+    <article class="card item">
+      <div class="item-head">
+        <div>
+          <div class="item-title">SM Lab — Senior Java Developer</div>
+          <div class="muted">
+            <span data-lang="ru">Ноябрь 2023 — Декабрь 2025</span>
+            <span data-lang="en" hidden>Nov 2023 — Dec 2025</span>
           </div>
-          <div class="pill">Enterprise Retail</div>
+        </div>
+        <div class="pill">Enterprise Retail</div>
+      </div>
+
+      <ul class="bullets">
+        <li>
+          <span data-lang="ru">Поддержка и развитие микросервиса с нагрузкой до 500 RPS</span>
+          <span data-lang="en" hidden>Maintained and evolved a microservice up to 500 RPS</span>
+        </li>
+        <li>
+          <span data-lang="ru">Ускорение GitLab CI pipeline ~в 2 раза</span>
+          <span data-lang="en" hidden>Improved GitLab CI pipeline time by ~2x</span>
+        </li>
+        <li>
+          <span data-lang="ru">Повышение throughput через реактивный подход (Reactor)</span>
+          <span data-lang="en" hidden>Increased throughput via reactive approach (Reactor)</span>
+        </li>
+        <li>
+          <span data-lang="ru">Устранение deadlock-ов и проблем с потоками</span>
+          <span data-lang="en" hidden>Resolved deadlocks and thread-contention issues</span>
+        </li>
+        <li>
+          <span data-lang="ru">Resilience4j: retries, устойчивость интеграций</span>
+          <span data-lang="en" hidden>Resilience4j: retries, resilient integrations</span>
+        </li>
+        <li>
+          <span data-lang="ru">Код-ревью, релиз-ноты, менторинг</span>
+          <span data-lang="en" hidden>Code reviews, release notes, mentoring</span>
+        </li>
+      </ul>
+
+      <div class="stack">
+        <span>Java 17</span>
+        <span>Spring Boot</span>
+        <span>Kafka</span>
+        <span>Oracle</span>
+        <span>Kubernetes</span>
+        <span>DDD</span>
+      </div>
+    </article>
+
+    <article class="card item">
+      <div class="item-head">
+        <div>
+          <div class="item-title">Bell Integrator — Senior Java Developer</div>
+          <div class="muted">
+            <span data-lang="ru">Август 2020 — Май 2023</span>
+            <span data-lang="en" hidden>Aug 2020 — May 2023</span>
+          </div>
+        </div>
+        <div class="pill">FinTech</div>
+      </div>
+
+      <ul class="bullets">
+        <li>
+          <span data-lang="ru">Разработка торговых и интеграционных сервисов</span>
+          <span data-lang="en" hidden>Built trading and integration services</span>
+        </li>
+        <li>
+          <span data-lang="ru">REST API, OpenAPI, Kafka, IBM MQ</span>
+          <span data-lang="en" hidden>REST APIs, OpenAPI, Kafka, IBM MQ</span>
+        </li>
+        <li>
+          <span data-lang="ru">Покрытие тестами ~70%</span>
+          <span data-lang="en" hidden>~70% test coverage</span>
+        </li>
+        <li>
+          <span data-lang="ru">Участие в релизах и разборе инцидентов</span>
+          <span data-lang="en" hidden>Production releases and incident response</span>
+        </li>
+      </ul>
+
+      <div class="stack">
+        <span>Java 11</span>
+        <span>Spring</span>
+        <span>Kafka</span>
+        <span>Kubernetes</span>
+        <span>Event Sourcing</span>
+      </div>
+    </article>
+
+    <article class="card item">
+      <div class="item-head">
+        <div>
+          <div class="item-title">ЦРПТ “Честный Знак” — Java Developer</div>
+          <div class="muted">
+            <span data-lang="ru">Сентябрь 2019 — Август 2020</span>
+            <span data-lang="en" hidden>Sep 2019 — Aug 2020</span>
+          </div>
+        </div>
+        <div class="pill">Public API</div>
+      </div>
+
+      <ul class="bullets">
+        <li>
+          <span data-lang="ru">Разработка публичного API Gateway</span>
+          <span data-lang="en" hidden>Built a high-load public API gateway</span>
+        </li>
+        <li>
+          <span data-lang="ru">Spring Security, JWT</span>
+          <span data-lang="en" hidden>Spring Security, JWT</span>
+        </li>
+        <li>
+          <span data-lang="ru">Retry / Circuit Breaker</span>
+          <span data-lang="en" hidden>Retry / circuit breaker patterns</span>
+        </li>
+        <li>
+          <span data-lang="ru">Prometheus, Grafana</span>
+          <span data-lang="en" hidden>Prometheus, Grafana</span>
+        </li>
+      </ul>
+
+      <div class="stack">
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>OpenFeign</span>
+        <span>Kubernetes</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>
+      <span data-lang="ru">Проекты</span>
+      <span data-lang="en" hidden>Projects</span>
+    </h2>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Intraday / DIS</div>
+        <p class="muted">
+          <span data-lang="ru">
+            Автоматизация процессов магазинов и маршрутизация данных между мобильными устройствами и бэкофисом.
+          </span>
+          <span data-lang="en" hidden>
+            Store process automation and data routing between mobile devices and back-office systems.
+          </span>
+        </p>
+        <ul class="bullets">
+          <li>
+            <span data-lang="ru">500 RPS, высокая конкуренция</span>
+            <span data-lang="en" hidden>500 RPS, high concurrency</span>
+          </li>
+          <li>
+            <span data-lang="ru">Оптимизация SQL и потоков</span>
+            <span data-lang="en" hidden>SQL and concurrency optimizations</span>
+          </li>
+          <li>
+            <span data-lang="ru">Resilience и observability</span>
+            <span data-lang="en" hidden>Resilience and observability</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <span data-lang="ru">Public API Gateway</span>
+          <span data-lang="en" hidden>Public API Gateway</span>
         </div>
         <p class="muted">
-          Intraday (автоматизация процессов магазинов) + DIS (маршрутизатор/кэш между мобильными устройствами и бэкофисом).
-          Покрытие: 600+ магазинов.
+          <span data-lang="ru">
+            Единая точка входа для внешних клиентов федеральной системы.
+          </span>
+          <span data-lang="en" hidden>
+            A single entry point for external clients of a nationwide system.
+          </span>
         </p>
         <ul class="bullets">
-          <li>Ускорил GitLab pipeline в 2 раза за счёт оптимизации интеграционных тестов</li>
-          <li>Настроил GitLab CI для микросервиса, внедрил OWASP dep-check (NVD API)</li>
-          <li>Поддерживал и развивал микросервис с нагрузкой до 500 RPS (peak write load)</li>
-          <li>Повысил пропускную способность, внедрив реактивный подход (Project Reactor)</li>
-          <li>Увеличил uptime: устранил deadlock-и, оптимизировал работу потоков</li>
-          <li>Настроил retries (Resilience4j) между микросервисами для устойчивости и согласованности данных</li>
-          <li>Интеграции: REST API, Kafka, Oracle DBLink; оптимизация SQL в инвентаризации и приёмке</li>
-          <li>ScrumBan, активное код-ревью; релиз-ноты; менторинг; распределение задач как техлид на одном из MS</li>
+          <li>
+            <span data-lang="ru">JWT, безопасность</span>
+            <span data-lang="en" hidden>JWT and security</span>
+          </li>
+          <li>
+            <span data-lang="ru">Высокая доступность</span>
+            <span data-lang="en" hidden>High availability</span>
+          </li>
+          <li>
+            <span data-lang="ru">Метрики и мониторинг</span>
+            <span data-lang="en" hidden>Metrics and monitoring</span>
+          </li>
         </ul>
-        <div class="stack">
-          <span>Java 17</span><span>Spring Boot 2</span><span>Gradle</span><span>Oracle</span><span>Kafka</span>
-          <span>Kubernetes</span><span>Helm</span><span>DDD</span><span>Hexagonal</span><span>RocksDB</span><span>HSQLDB</span>
-        </div>
-      </article>
+      </div>
+    </div>
+  </section>
 
-      <article class="card item">
-        <div class="item-head">
-          <div>
-            <div class="item-title">Bybit Fintech — Java Developer</div>
-            <div class="muted">Август 2025 — Октябрь 2025 · Сингапур</div>
-          </div>
-          <div class="pill">Trading</div>
-        </div>
-        <ul class="bullets">
-          <li>Разработка торгового бота с возможностью запускать множество стратегий</li>
-          <li>Сбор требований, прототипирование, бэктестинг</li>
-        </ul>
-        <div class="stack">
-          <span>Spring Boot</span><span>WebSocket</span><span>Bybit API</span><span>React</span>
-        </div>
-      </article>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>
+      <span data-lang="ru">Навыки</span>
+      <span data-lang="en" hidden>Skills</span>
+    </h2>
 
-      <article class="card item">
-        <div class="item-head">
-          <div>
-            <div class="item-title">SM Lab — Java Developer</div>
-            <div class="muted">Август 2025 — Сентябрь 2025 · Казань</div>
-          </div>
-          <div class="pill">LLM Automation</div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">
+          <span data-lang="ru">Backend</span>
+          <span data-lang="en" hidden>Backend</span>
         </div>
-        <ul class="bullets">
-          <li>Реализовал Code Review Agent (MVP) на LangFlow для GitLab CI</li>
-        </ul>
-        <div class="stack">
-          <span>LangFlow</span><span>Python 3</span><span>GitLab API</span><span>Llama</span>
-        </div>
-      </article>
-
-      <article class="card item">
-        <div class="item-head">
-          <div>
-            <div class="item-title">Bell Integrator — Senior Java Developer</div>
-            <div class="muted">Август 2020 — Май 2023 · Москва</div>
-          </div>
-          <div class="pill">FinTech</div>
-        </div>
-        <ul class="bullets">
-          <li>Разработка функционала маржинальной торговли; REST API и OpenAPI-документация</li>
-          <li>Интеграции с внешними/внутренними системами: IBM MQ, Hazelcast, HTTP/2</li>
-          <li>Поддержание покрытия тестами ~70%, участие в ревью и автоматизации тестирования</li>
-          <li>Участие в релизах на прод и оперативном устранении инцидентов</li>
-          <li>Реализовал расчёт стоимости премиальных опционов MOEX по модели Блэка–Шоулза</li>
-          <li>Оптимизация построения клиентского дерева: сокращение времени деплоя торгового контура</li>
-          <li>LDAP-аутентификация, участие в SRE-процессах, метрики/мониторинг</li>
-        </ul>
-        <div class="stack">
-          <span>Java 11</span><span>Spring</span><span>Kafka</span><span>Kubernetes</span><span>Maven</span><span>Event Sourcing</span>
-          <span>IBM MQ</span><span>Hazelcast</span>
-        </div>
-      </article>
-
-      <article class="card item">
-        <div class="item-head">
-          <div>
-            <div class="item-title">ЦРПТ (“Честный Знак”) — Java Developer</div>
-            <div class="muted">Сентябрь 2019 — Август 2020</div>
-          </div>
-          <div class="pill">Public API</div>
-        </div>
-        <ul class="bullets">
-          <li>Разработка высоконагруженного публичного API Gateway: маршрутизация, унификация API, retry/circuit breaker</li>
-          <li>Spring Security + JWT, асинхронные HTTP-вызовы, сопровождение OpenAPI</li>
-          <li>Метрики и дашборды для Prometheus/Grafana; высокая доступность под нагрузкой</li>
-          <li>10+ стабильных релизов, активно используемых по всей стране</li>
-        </ul>
-        <div class="stack">
-          <span>Java 11</span><span>Spring Boot</span><span>OpenFeign</span><span>Gradle</span><span>Kubernetes</span><span>Prometheus</span><span>Grafana</span>
-        </div>
-      </article>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <h2>Проекты</h2>
-      <div class="grid-2">
-        <div class="card">
-          <div class="card-title">Intraday + DIS (SM Lab)</div>
-          <p class="muted">Автоматизация процессов магазинов + маршрутизация/кэш данных между мобильными устройствами и бэкофисом.</p>
-          <ul class="bullets">
-            <li>Производительность: реактивный подход, оптимизация SQL</li>
-            <li>Надёжность: устранение deadlock-ов, Resilience4j (retries)</li>
-            <li>CI/CD: ускорение pipeline, security checks</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-title">Public API Gateway (“Честный Знак”)</div>
-          <p class="muted">Единая точка входа для внешних клиентов: маршрутизация, унификация API, безопасность, наблюдаемость.</p>
-          <ul class="bullets">
-            <li>Spring Security + JWT</li>
-            <li>retry/circuit breaker</li>
-            <li>Prometheus/Grafana, OpenAPI</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-title">Trading Bot (Bybit Fintech)</div>
-          <p class="muted">Бот с возможностью параллельного запуска стратегий и бэктестинга.</p>
-          <ul class="bullets">
-            <li>WebSocket, интеграция с биржевым API</li>
-            <li>Сбор требований, прототипирование</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-title">Code Review Agent (MVP)</div>
-          <p class="muted">Автоматизация code review в GitLab CI с использованием LLM-подхода.</p>
-          <ul class="bullets">
-            <li>LangFlow, GitLab API</li>
-            <li>Интеграция в CI pipeline</li>
-          </ul>
+        <div class="chips">
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>Spring Security</span>
+          <span>REST API</span>
+          <span>OpenAPI</span>
+          <span>JPA</span>
         </div>
       </div>
 
-      <p class="small muted">
-        Примечание: если вы дадите ссылки на GitHub/демо/репозитории, я добавлю их в карточки.
-      </p>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <h2>Навыки</h2>
-      <div class="grid-3">
-        <div class="card">
-          <div class="card-title">Backend</div>
-          <div class="chips">
-            <span>Java</span><span>Spring</span><span>Spring Boot</span><span>Spring Security</span>
-            <span>REST API</span><span>OpenAPI</span><span>JPA/Hibernate</span><span>Liquibase</span>
-          </div>
+      <div class="card">
+        <div class="card-title">
+          <span data-lang="ru">Data & Messaging</span>
+          <span data-lang="en" hidden>Data & Messaging</span>
         </div>
-
-        <div class="card">
-          <div class="card-title">Data & Messaging</div>
-          <div class="chips">
-            <span>Oracle</span><span>PostgreSQL</span><span>SQL</span><span>Kafka</span><span>JMS</span><span>IBM MQ</span><span>Hazelcast</span>
-            <span>RocksDB</span><span>HSQLDB</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-title">Infrastructure & Quality</div>
-          <div class="chips">
-            <span>Docker</span><span>Kubernetes</span><span>Helm</span><span>CI/CD</span><span>GitLab CI</span>
-            <span>Unit/Integration Testing</span><span>Performance Optimization</span><span>Concurrency</span><span>Grafana</span>
-          </div>
+        <div class="chips">
+          <span>Oracle</span>
+          <span>PostgreSQL</span>
+          <span>Kafka</span>
+          <span>JMS</span>
+          <span>Hazelcast</span>
         </div>
       </div>
-    </section>
 
-    <!-- PRACTICE -->
-    <section id="practice" class="sec
+      <div class="card">
+        <div class="card-title">
+          <span data-lang="ru">Infrastructure</span>
+          <span data-lang="en" hidden>Infrastructure</span>
+        </div>
+        <div class="chips">
+          <span>Docker</span>
+          <span>Kubernetes</span>
+          <span>Helm</span>
+          <span>GitLab CI</span>
+          <span>Prometheus</span>
+          <span>Grafana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICE -->
+  <section id="practice" class="section">
+    <h2>
+      <span data-lang="ru">Инженерный подход</span>
+      <span data-lang="en" hidden>Engineering Approach</span>
+    </h2>
+
+    <div class="card">
+      <ul class="bullets">
+        <li>
+          <span data-lang="ru">Контракты API и версионирование</span>
+          <span data-lang="en" hidden>API contracts and versioning</span>
+        </li>
+        <li>
+          <span data-lang="ru">Fail-fast, retry, circuit breaker</span>
+          <span data-lang="en" hidden>Fail-fast, retries, circuit breakers</span>
+        </li>
+        <li>
+          <span data-lang="ru">Оптимизация p95/p99</span>
+          <span data-lang="en" hidden>p95/p99 optimization</span>
+        </li>
+        <li>
+          <span data-lang="ru">Тесты, code review, CI/CD</span>
+          <span data-lang="en" hidden>Testing, code reviews, CI/CD</span>
+        </li>
+        <li>
+          <span data-lang="ru">Метрики и эксплуатационная готовность</span>
+          <span data-lang="en" hidden>Metrics and production readiness</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section id="contacts" class="section">
+    <h2>
+      <span data-lang="ru">Контакты</span>
+      <span data-lang="en" hidden>Contact</span>
+    </h2>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">
+          <span data-lang="ru">Связаться</span>
+          <span data-lang="en" hidden>Reach out</span>
+        </div>
+        <ul class="contacts">
+          <li>Email: <a href="mailto:robert.sadretdinov.dev@gmail.com">robert.sadretdinov.dev@gmail.com</a></li>
+          <li>Telegram: <a href="https://t.me/roberts31337" target="_blank" rel="noopener">@roberts31337</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <span data-lang="ru">Профили</span>
+          <span data-lang="en" hidden>Profiles</span>
+        </div>
+        <ul class="contacts">
+          <li>
+            <a href="https://www.linkedin.com/in/roberts31337" target="_blank" rel="noopener">LinkedIn</a>
+          </li>
+          <li>
+            <a href="#" aria-disabled="true" title="Добавьте ссылку на GitHub / Add your GitHub link">
+              GitHub (добавить / add)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer muted">
+    <span>© <span id="y"></span> Robert Sadretdinov</span>
+    <span class="sep">·</span>
+    <span>GitHub Pages</span>
+  </footer>
+
+</main>
+
+<script>
+  // --- Language toggle (RU/EN) ---
+  (function () {
+    const KEY = "site_lang";
+
+    function setPressed(lang) {
+      const ru = document.getElementById("btn-ru");
+      const en = document.getElementById("btn-en");
+      ru.setAttribute("aria-pressed", lang === "ru" ? "true" : "false");
+      en.setAttribute("aria-pressed", lang === "en" ? "true" : "false");
+    }
+
+    function applyLang(lang) {
+      document.documentElement.setAttribute("lang", lang === "en" ? "en" : "ru");
+
+      const nodes = document.querySelectorAll("[data-lang]");
+      nodes.forEach((el) => {
+        const show = el.getAttribute("data-lang") === lang;
+        if (show) el.removeAttribute("hidden");
+        else el.setAttribute("hidden", "");
+      });
+
+      setPressed(lang);
+      try { localStorage.setItem(KEY, lang); } catch (e) {}
+    }
+
+    function getLangFromQuery() {
+      const p = new URLSearchParams(window.location.search);
+      const q = (p.get("lang") || "").toLowerCase();
+      if (q === "en" || q === "ru") return q;
+      return null;
+    }
+
+    function getInitialLang() {
+      const q = getLangFromQuery();
+      if (q) return q;
+
+      try {
+        const saved = (localStorage.getItem(KEY) || "").toLowerCase();
+        if (saved === "en" || saved === "ru") return saved;
+      } catch (e) {}
+
+      // fallback: browser language
+      const nav = (navigator.language || "").toLowerCase();
+      return nav.startsWith("ru") ? "ru" : "en";
+    }
+
+    document.getElementById("btn-ru").addEventListener("click", function () {
+      applyLang("ru");
+    });
+
+    document.getElementById("btn-en").addEventListener("click", function () {
+      applyLang("en");
+    });
+
+    // Init
+    applyLang(getInitialLang());
+    document.getElementById("y").textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>
